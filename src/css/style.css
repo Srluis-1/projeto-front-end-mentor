@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+body {
+    font-family: "Overpass", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--Very-Dark-Blue);
+}
+
+
+.card{
+    width: 400px;
+    padding: 30px 32px;
+    border-radius: 30px;
+    background-image: radial-gradient(circle at 50% -50%,#232A32, #171E28) ;
+    position: relative;
+}
+
+.card .star{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--Dark-Blue);
+    margin-bottom: 30px;
+}
+
+.card h3{
+    font-size: 24px;
+    color: var(--White);
+    padding-bottom: 10px;
+}
+
+.card p{
+    font-size: 15px;
+    color: var(--Light-Grey);
+    padding-bottom: 35px;
+    line-height: 23px;
+}
+
+.card .rates{
+      display: flex;
+      justify-content: space-between; 
+}
+
+.card .rates button{
+    width: 49px;
+    height: 49px;
+    border-radius: 100%;
+    background-color: var(--Dark-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--Light-Grey);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    position: relative;
+}
+.card .rates button::after{
+    content: "";
+    width: 49px;
+    height: 49px;
+    border-radius: 100%;
+    background-color: #fb7413;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0,0);
+}
+.card .rates button:hover::after{
+    transform: scale(1.1);
+}
+
+.card .rates button span{
+    position: relative;
+    z-index: 1;
+}
+
+.card .rates button:hover span{
+    color: var(--White);
+}
+.card .rates button.active{
+    background-color: var(--Light-Grey);
+}
+.card .rates button.active span{
+    color: var(--White);
+}
+
+.card #btn{
+    width: 100%;
+    height: 48px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    background: var(--Orange);
+    color: var(--White);
+    margin-top: 32px;
+    font-weight: bold;
+}
+
+.card #btn:hover{
+    background: var(--White);
+    color: var(--Dark-Blue);
+    font-weight: bold;
+}
+
+.thanks{
+    background-image: radial-gradient(circle at 50% -50%,#232A32, #171E28) ;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+}
+.card .thanks.active{
+    opacity: 1;
+    visibility: visible;
+}
+.card .thanks img{
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.card .thanks span{
+    display: inline-block;
+    line-height: 32px;
+    font-size: 15px;
+    color: var(--Orange);
+    background-color: var(--Very-Dark-Blue);
+    padding: 0 16px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+.card .thanks span div{
+    display: inline;
+}
+.card .thanks p{
+    padding: 0 30px;
+    text-align: center;
+}

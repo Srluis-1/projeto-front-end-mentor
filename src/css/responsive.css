@@ -1,0 +1,38 @@
+@media only screen and ( max-width: 600px ){
+    body{
+        padding: 0 24px;
+    }
+    .card{
+        width: 100%;
+        padding: 22px;
+    }
+    .card .star{
+        width: 40px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    .card h3{
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    .card p{
+        margin-bottom: 20px;
+    }
+    .card .rates button{
+        width: 40px;
+        height: 40px;
+    }
+    .card #btn{
+        height: 45px;
+        margin-top: 20px;
+    }
+    .card .thanks img{
+        height: 95px;
+    }
+    .card .thanks span{
+        margin-bottom: 20px;
+    }
+    .card .thanks p{
+        padding: 0 24px;
+    }
+}
